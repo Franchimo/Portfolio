@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Frank Del Sontro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="description" content="Selected projects by Frank Del Sontro." />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="animated-bg"></div>
+    
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-text">Frank Del Sontro</span>
+            <span class="brand-glow"></span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a class="active" href="projects.html"><span>Projects</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <header class="page-header">
+            <h1>Projects</h1>
+            <p class="muted">Three representative projects showcasing engineering and design skills.</p>
+        </header>
+
+        <section class="grid projects-grid">
+            <article class="card glass-card project">
+                <div class="project-header">
+                    <div class="project-icon">🐍</div>
+                    <h3>Python Automation Script</h3>
+                </div>
+                <p>Built a Python tool to automate repetitive data processing tasks, improving speed and reducing errors. Focus on clean structure and helpful logging.</p>
+                <ul class="tags">
+                    <li>Python</li>
+                    <li>CLI</li>
+                    <li>Automation</li>
+                </ul>
+            </article>
+            <article class="card glass-card project">
+                <div class="project-header">
+                    <div class="project-icon">📐</div>
+                    <h3>Connecting Rod CAD Design</h3>
+                </div>
+                <p>Designed a connecting rod in Autodesk Inventor Professional 2026, including 3D modeling, technical drawings with multiple views, and detailed physical property analysis. Created comprehensive documentation with orthographic, isometric, and section views.</p>
+                <div class="project-gallery">
+                    <div class="gallery-item">
+                        <img src="assets/images/connecting-rod-3d.png" alt="Connecting Rod 3D Model in Autodesk Inventor showing properties" class="project-image" />
+                        <p class="image-caption">3D Model with Physical Properties</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="assets/images/connecting-rod-drawing.png" alt="Technical drawing of connecting rod with multiple views" class="project-image" />
+                        <p class="image-caption">Technical Drawing with Multiple Views</p>
+                    </div>
+                </div>
+                <ul class="tags">
+                    <li>Autodesk Inventor</li>
+                    <li>CAD</li>
+                    <li>3D Modeling</li>
+                    <li>Technical Drawing</li>
+                </ul>
+            </article>
+            <article class="card glass-card project">
+                <div class="project-header">
+                    <div class="project-icon">🌐</div>
+                    <h3>Responsive Portfolio Website</h3>
+                </div>
+                <p>Developed this responsive site with a consistent color system, scalable typography, and accessible navigation.</p>
+                <ul class="tags">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Frank Del Sontro &middot; ECET @ NJIT &middot; Kearny, NJ</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

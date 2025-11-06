@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact — Frank Del Sontro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="description" content="Contact Frank Del Sontro or send a message." />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="animated-bg"></div>
+    
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-text">Frank Del Sontro</span>
+            <span class="brand-glow"></span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="projects.html"><span>Projects</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a class="active" href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <header class="page-header">
+            <h1>Get in Touch</h1>
+            <p class="muted">Reach me directly or send a quick message.</p>
+        </header>
+
+        <section class="contact-grid">
+            <div class="card glass-card contact-info">
+                <div class="contact-icon">📧</div>
+                <h3>Contact Information</h3>
+                <ul class="contact-list">
+                    <li>
+                        <strong>Phone:</strong>
+                        <a href="tel:+12016829496">201-682-9496</a>
+                    </li>
+                    <li>
+                        <strong>Email:</strong>
+                        <a href="mailto:delsontrofrank@gmail.com">delsontrofrank@gmail.com</a>
+                    </li>
+                    <li>
+                        <strong>Location:</strong>
+                        <span>Kearny, NJ</span>
+                    </li>
+                </ul>
+                <div class="social-links">
+                    <p>Let's connect!</p>
+                </div>
+            </div>
+            <form class="card glass-card contact-form" id="contactForm" novalidate>
+                <h3>Send a Message</h3>
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Your name" />
+                    <p class="error" data-error-for="name"></p>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="your.email@example.com" />
+                    <p class="error" data-error-for="email"></p>
+                </div>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required placeholder="Your message..."></textarea>
+                    <p class="error" data-error-for="message"></p>
+                </div>
+                <button class="btn primary pulse" type="submit">
+                    <span>Send Message</span>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M2.5 17.5L17.5 2.5M17.5 2.5H7.5M17.5 2.5V12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Frank Del Sontro &middot; ECET @ NJIT &middot; Kearny, NJ</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About — Frank Del Sontro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <meta name="description" content="About Frank Del Sontro — background, education, and interests." />
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <div class="animated-bg"></div>
+    
+    <header class="site-header">
+        <a class="brand" href="index.html">
+            <span class="brand-text">Frank Del Sontro</span>
+            <span class="brand-glow"></span>
+        </a>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary">
+            <ul>
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a class="active" href="about.html"><span>About</span></a></li>
+                <li><a href="projects.html"><span>Projects</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" class="container">
+        <header class="page-header">
+            <h1>About Me</h1>
+            <p class="muted">Personal background, education, and interests.</p>
+        </header>
+
+        <section class="content-grid">
+            <article class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon">👤</div>
+                    <h2>Background</h2>
+                </div>
+                <p>My name is <strong>Frank Del Sontro</strong>. I'm an ECET (Electrical and Computer Engineering Technology) major at NJIT, originally from Kearny, New Jersey. I enjoy bridging the gap between hardware and software by designing thoughtful solutions and building them with modern tools.</p>
+                <p>I bring a unique perspective that combines technical engineering skills with creative problem-solving, always looking for innovative ways to tackle challenges.</p>
+            </article>
+            <article class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon">🎓</div>
+                    <h2>Education</h2>
+                </div>
+                <ul class="education-list">
+                    <li>
+                        <div class="edu-item">
+                            <div class="edu-icon">🏛️</div>
+                            <div>
+                                <strong>New Jersey Institute of Technology (NJIT)</strong>
+                                <p class="edu-detail">ECET Major — Electrical and Computer Engineering Technology</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="edu-item">
+                            <div class="edu-icon">🏫</div>
+                            <div>
+                                <strong>Kearny High School</strong>
+                                <p class="edu-detail">Graduate</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </article>
+            <article class="card glass-card">
+                <div class="card-header">
+                    <div class="card-icon">⚽</div>
+                    <h2>Interests</h2>
+                </div>
+                <p>I'm passionate about <strong>soccer</strong>, <strong>designing</strong>, and <strong>developing</strong>. I love working on projects that combine engineering fundamentals with usability and visual clarity.</p>
+                <div class="interests-grid">
+                    <div class="interest-tag">⚽ Soccer</div>
+                    <div class="interest-tag">🎨 Designing</div>
+                    <div class="interest-tag">💻 Developing</div>
+                    <div class="interest-tag">🔧 Engineering</div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="year"></span> Frank Del Sontro &middot; ECET @ NJIT &middot; Kearny, NJ</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
